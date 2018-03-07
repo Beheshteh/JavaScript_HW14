@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+  <title>Document</title>
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+        crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"    integrity="sha384JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+     
+    
+    <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> -->
+    <link rel="stylesheet" ref="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.bootstrap.css">
+    <script type="text/javascript" src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+        
+    
+     <link rel="stylesheet" type="text/css" href="style.css">
+    
+        
+</head>
+
+<body>
+  <!--Navbar-->
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <button class="navbar-header"><a href="index.html"></a></button>
+    </div>
+  </nav>
+  <div class="container">
+      <div class= "title">
+          <br>
+          <h1>UFO Sightings</h1>
+      </div> 
+  </div>  
+  <br>  
+  <div class="container">
+      
+      <div class="leftpane">
+            <br>
+            <br>
+            <br>
+            <h6>Filter Search</h6>
+            <br>
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-12" id="filter_col1" data-column="0">
+                        <label for="inputDate">Enter a Date</label>
+                        <input type="city" class="form-control" id="col0_filter" placeholder="Date/Time" >
+                    </div>
+                    <div class="form-group col-md-12" id="filter_col2" data-column="1">
+                        <label for="inputCity">Enter a City</label>
+                        <input type="city" class="form-control" id="col1_filter" placeholder="City" >
+                    </div>
+                    <div class="form-group col-md-12" id="filter_col3" data-column="2">
+                        <label for="inputState">Enter a State</label>
+                        <input type="state" class="form-control" id="col2_filter" placeholder="State">
+                    </div>
+                    <div class="form-group col-md-12" id="filter_col4" data-column="3">
+                        <label for="inputCountry">Enter a Country</label>
+                        <input type="country" class="form-control" id="col3_filter" placeholder="Country">
+                    </div>
+                    <div class="form-group col-md-12" id="filter_col5" data-column="4">
+                        <label for="inputShape">Enter a Shape</label>
+                        <input type="shape" class="form-control" id="col4_filter" placeholder="Shape">
+                    </div>
+                 </div>
+            </form>
+
+            
+            
+      </div>      
+      <div class="rightpane"><br><h4></h4>
+           <div class="row">
+               <div class="col-md-12">
+                   <div class="table-responsive">
+
+                   <table class="table table-striped" id="myTable"> 
+                   <!--<table width="100%" class="display" id="example" cellspacing="0">
+                   -->       
+                       <thead>
+                         <tr>
+                             <th>Date/Time</th>
+                             <th>City</th>
+                             <th>State</th>
+                             <th>Country</th>
+                             <th>Shape</th>
+                             <th>Duration</th>
+                             <th>Comment</th>
+                         </tr>
+                       </thead>
+                       
+                       <tbody>
+                       </tbody>
+                    </table>
+                </div>
+             </div>
+          <script type="text/javascript" src="data.js" ></script>
+          <script type="text/javascript" src="index.js" ></script>
+                   
+           
+         </div> <!-- right pane -->
+             
+    </div>  <!-- container --> 
+    
+    
+        

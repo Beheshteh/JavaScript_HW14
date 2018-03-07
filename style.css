@@ -1,0 +1,85 @@
+/*
+ First External CSS Stylesheet
+ */
+
+/* Styling for HTML elements */
+
+button {
+  background-color: darkgray;
+}
+
+/* Selecting elements by class */
+.container {
+  margin: 10 auto;
+  position: center;
+  text-align: center;
+}
+
+.navbar {
+  padding: 10px;
+  background: grey;
+}
+
+/* Getting rid of the default link styles here */
+
+.leftpane{
+  width: 20%;
+  background-color: grey;
+  float: left;
+  border-collapse: collapse; 
+  padding: 10px;
+}
+.rightpane{
+  width: 80%;
+  background-color: white;
+  position: relative;
+  padding-right: 5px;
+  margin-left: 25%      
+}
+
+.table th{
+  padding: 0;
+}
+
+.dataTables_wrapper .dataTables_filter {
+  float: right;
+  text-align: right;
+  visibility: hidden;
+  }
+/* Adding media queries to show the drop-down, and hide the navbar when the screen
+ is smaller than 480 pixels */
+
+@media (max-width: 1023px) {
+  .navbar li {
+    padding: 10px;
+  }
+
+  .post {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+  .navbar ul {
+    visibility: hidden;
+  }
+
+  #nav-select {
+    visibility: visible;
+  }
+
+  .rightpane{
+    
+    margin-top: 520px;
+    height: 250px;
+    width: 98%;
+    margin-left: 0;
+    
+  }
+  
+  .leftpane{
+    width: 98%;
+    height: 500px;
+  }
+  
+  
+}
+
